@@ -1,0 +1,36 @@
+﻿@model NimapProject.Models.Category
+@{
+    ViewData["Title"] = "AddCategory";
+}
+
+<h1>AddCategory</h1>
+
+<form asp-action="AddCategory">
+
+    <table>
+        <tr>
+            <td>
+                Enter Category Id
+            </td>
+            <td>
+                <input type="text" asp-for="CategoryId"/>
+            </td>
+        </tr>
+         <tr>
+            <td>
+                Enter Category Name
+            </td>
+            <td>
+                <input type="text" asp-for="CategoryName"/>
+            </td>
+        </tr>
+         <tr>
+            <td>
+            
+            </td>
+            <td>
+                <input type="submit" value="Save"/>
+            </td>
+        </tr>
+    </table>
+</form>
